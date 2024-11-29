@@ -1,0 +1,53 @@
+.movie-card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    /* Effetto di ingrandimento */
+}
+
+.movie-img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Sfondo semitrasparente per il testo */
+    color: white;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.movie-card:hover .movie-info {
+    opacity: 1;
+    /* Mostra le informazioni al passaggio del mouse */
+}
+
+.movie-info .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.movie-info p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    padding: 0;
+    /* Rimuovi padding per l'effetto hover */
+}
