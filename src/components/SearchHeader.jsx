@@ -14,7 +14,9 @@ export default function SearchHeader() {
 
     return (
         <>
-
+            <header>
+                <img src="https://fontmeme.com/permalink/241129/35a1c37012861df4a2d992c899d110d8.png" alt="" />
+            </header>
             <h1>Movie & TV Show Search</h1>
             {/* Barra di ricerca */}
             <input
